@@ -23,13 +23,9 @@ samtools faidx ref_brca1.fa.gz
 
 # zip with bgzip
 bgzip -c brca1_1kgPhase3_variants.vcf > brca1_1kgPhase3_variants.vcf.gz
-bgzip -c brca1_OR4F_annotation.vcf > brca1_OR4F_annotation.vcf.gz
-bgzip -c brca1_WASH7P_annotation.vcf > brca1_WASH7P_annotation.vcf.gz
 
 # index with tabix
 tabix -p vcf brca1_1kgPhase3_variants.vcf.gz
-tabix -p vcf brca1_OR4F_annotation.vcf.gz
-tabix -p vcf brca1_WASH7P_annotation.vcf.gz
 
 ##
 ### reads
